@@ -7,7 +7,7 @@ in
 {
   programs.helix = {
     enable = true;
-    package = pkgs.unstable.helix;
+    package = pkgs.helix;
     defaultEditor = true;
     settings = (builtins.fromTOML settings_toml);
     languages = (builtins.fromTOML languages_toml);
