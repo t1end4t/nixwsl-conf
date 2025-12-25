@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "betterfox": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1761706852,
-        "narHash": "sha256-sZEgmCrAm0SnRoFmn8glScII07Kvpa6cYdC6jHHQmMI=",
-        "owner": "yokoffing",
-        "repo": "Betterfox",
-        "rev": "3b159ac8fbb3d5921db8ff1763aa51cff12ea1ec",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yokoffing",
-        "repo": "Betterfox",
-        "type": "github"
-      }
-    },
     "catppuccin": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -35,19 +19,19 @@
         "type": "github"
       }
     },
-    "catppuccin-qutebrowser": {
+    "flake-compat": {
       "flake": false,
       "locked": {
-        "lastModified": 1741931053,
-        "narHash": "sha256-FmxrgpFlp+cMUdCx5HHIiLMGWML23p+pfxTKT/X0UME=",
-        "owner": "catppuccin",
-        "repo": "qutebrowser",
-        "rev": "808adc3d7d5be6fc573d6be6e9c888cb96b5d6e6",
+        "lastModified": 1765121682,
+        "narHash": "sha256-4VBOP18BFeiPkyhy9o4ssBNQEvfvv1kXkasAYd0+rrA=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "65f23138d8d09a92e30f1e5c87611b23ef451bf3",
         "type": "github"
       },
       "original": {
-        "owner": "catppuccin",
-        "repo": "qutebrowser",
+        "owner": "edolstra",
+        "repo": "flake-compat",
         "type": "github"
       }
     },
@@ -69,6 +53,26 @@
         "owner": "nix-community",
         "ref": "release-25.05",
         "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "nixos-wsl": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1765841014,
+        "narHash": "sha256-55V0AJ36V5Egh4kMhWtDh117eE3GOjwq5LhwxDn9eHg=",
+        "owner": "nix-community",
+        "repo": "NixOS-WSL",
+        "rev": "be4af8042e7a61fa12fda58fe9a3b3babdefe17b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "main",
+        "repo": "NixOS-WSL",
         "type": "github"
       }
     },
@@ -106,6 +110,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1765472234,
+        "narHash": "sha256-9VvC20PJPsleGMewwcWYKGzDIyjckEz8uWmT0vCDYK0=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "2fbfb1d73d239d2402a8fe03963e37aab15abe8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1764560356,
         "narHash": "sha256-M5aFEFPppI4UhdOxwdmceJ9bDJC4T6C6CzCK1E2FZyo=",
         "owner": "nixos",
@@ -138,11 +158,10 @@
     },
     "root": {
       "inputs": {
-        "betterfox": "betterfox",
         "catppuccin": "catppuccin",
-        "catppuccin-qutebrowser": "catppuccin-qutebrowser",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs_2",
+        "nixos-wsl": "nixos-wsl",
+        "nixpkgs": "nixpkgs_3",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nushell-defaultConfig": "nushell-defaultConfig"
       }

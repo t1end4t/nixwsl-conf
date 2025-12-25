@@ -1,6 +1,6 @@
 { inputs, pkgs, ... }:
 let
-  userName = "icslab";
+  userName = "nixos";
 in
 {
   imports = [
@@ -14,7 +14,7 @@ in
   # allow your normal user to use extra substituters
   nix.settings.trusted-users = [
     "root"
-    "icslab"
+    "nixos"
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -37,4 +37,5 @@ in
 
   # NOTE: enable wsl
   wsl.enable = true;
+  wsl.defaultUser = "nixos";
 }

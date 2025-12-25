@@ -5,8 +5,8 @@
       imports = [ ./hosts/tiendat.nix ];
     };
 
-    "icslab" = {
-      imports = [ ./hosts/icslab.nix ];
+    "nixos" = {
+      imports = [ ./hosts/nixos.nix ];
     };
   };
 }

@@ -51,11 +51,12 @@
     let
       # custom user and host
       users = [
-        "icslab"
+        "nixos"
       ];
       hosts = [
         "intel-pc"
       ];
+
       userToAttrs = builtins.listToAttrs (
         builtins.map (user: {
           name = user;
@@ -71,9 +72,15 @@
 
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
+      # Supported systems for your flake packages, shell, etc.
       systems = [
+        "aarch64-linux"
+        "i686-linux"
         "x86_64-linux"
+        "aarch64-darwin"
+        "x86_64-darwin"
       ];
+
       # This is a function that generates an attribute by calling a function you
       # pass to it, with each system as an argument
       forAllSystems = nixpkgs.lib.genAttrs systems;
@@ -105,6 +112,7 @@
             inherit inputs outputs;
             # inherit inputs outputs platformio-udev;
           };
+          system = "x86_64-linux";
           modules = [
             ./nixos/${host}/configuration.nix
             nixos-wsl.nixosModules.default

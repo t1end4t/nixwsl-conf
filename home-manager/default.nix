@@ -2,9 +2,9 @@
   imports = [
     ./base.nix
     ./environment.nix
-    ./desktop-apps
+    # ./desktop-apps
     ./editors
-    ./gui
+    # ./gui
     ./shell
     ./tools
   ];
