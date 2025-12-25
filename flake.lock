@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "betterfox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761706852,
+        "narHash": "sha256-sZEgmCrAm0SnRoFmn8glScII07Kvpa6cYdC6jHHQmMI=",
+        "owner": "yokoffing",
+        "repo": "Betterfox",
+        "rev": "3b159ac8fbb3d5921db8ff1763aa51cff12ea1ec",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yokoffing",
+        "repo": "Betterfox",
+        "type": "github"
+      }
+    },
     "catppuccin": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -16,6 +32,22 @@
         "owner": "catppuccin",
         "ref": "release-25.05",
         "repo": "nix",
+        "type": "github"
+      }
+    },
+    "catppuccin-qutebrowser": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741931053,
+        "narHash": "sha256-FmxrgpFlp+cMUdCx5HHIiLMGWML23p+pfxTKT/X0UME=",
+        "owner": "catppuccin",
+        "repo": "qutebrowser",
+        "rev": "808adc3d7d5be6fc573d6be6e9c888cb96b5d6e6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "qutebrowser",
         "type": "github"
       }
     },
@@ -58,11 +90,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1766309749,
-        "narHash": "sha256-3xY8CZ4rSnQ0NqGhMKAy5vgC+2IVK0NoVEzDoOh4DA4=",
+        "lastModified": 1764517877,
+        "narHash": "sha256-pp3uT4hHijIC8JUK5MEqeAWmParJrgBVzHLNfJDZxg4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "a6531044f6d0bef691ea18d4d4ce44d0daa6e816",
+        "rev": "2d293cbfa5a793b4c50d17c05ef9e385b90edf6c",
         "type": "github"
       },
       "original": {
@@ -74,11 +106,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1766399428,
-        "narHash": "sha256-vS6LSOMDOB3s+L6tqw9IGujxnmUAZQnEG+Vi640LayI=",
+        "lastModified": 1764560356,
+        "narHash": "sha256-M5aFEFPppI4UhdOxwdmceJ9bDJC4T6C6CzCK1E2FZyo=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "a6c3a6141ec1b367c58ead3f7f846c772a25f4e5",
+        "rev": "6c8f0cca84510cc79e09ea99a299c9bc17d03cb6",
         "type": "github"
       },
       "original": {
@@ -91,11 +123,11 @@
     "nushell-defaultConfig": {
       "flake": false,
       "locked": {
-        "lastModified": 1766540753,
-        "narHash": "sha256-8R0MB0Wkh1yldu2SxhN4AthKmtkcqY8dSCxZ38A4UsY=",
+        "lastModified": 1764608756,
+        "narHash": "sha256-IImg5dC14MFDSbgpA8f2tGBBw6JSakBAZWTxpH4h7tc=",
         "owner": "nushell",
         "repo": "nushell",
-        "rev": "adbcac331b9312939f9735f5f4e3eb256ae8d339",
+        "rev": "a39198b775d7683cec81bfee3c59cd0a87aa8f12",
         "type": "github"
       },
       "original": {
@@ -106,7 +138,9 @@
     },
     "root": {
       "inputs": {
+        "betterfox": "betterfox",
         "catppuccin": "catppuccin",
+        "catppuccin-qutebrowser": "catppuccin-qutebrowser",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
