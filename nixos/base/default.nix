@@ -5,7 +5,7 @@
     # ./apps
     # ./daemon
     # ./hosts/hosts.nix
-    ./catppuccin.nix
-    ./fonts.nix
+    # ./catppuccin.nix
+    # ./fonts.nix
   ];
 }

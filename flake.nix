@@ -26,7 +26,7 @@
 
     # NOTE: catppuccin for nix, change release because it break!
     # catppuccin.url = "github:catppuccin/nix";
-    catppuccin.url = "github:catppuccin/nix/release-25.05";
+    # catppuccin.url = "github:catppuccin/nix/release-25.05";
 
     # non-flake repositories
     nushell-defaultConfig = {
@@ -44,7 +44,7 @@
       nixpkgs,
       home-manager,
       nushell-defaultConfig,
-      catppuccin,
+      # catppuccin,
       nixos-wsl,
       ...
     }@inputs:
@@ -116,7 +116,7 @@
           modules = [
             ./nixos/${host}/configuration.nix
             nixos-wsl.nixosModules.default
-            catppuccin.nixosModules.catppuccin
+            # catppuccin.nixosModules.catppuccin
           ];
         }
       ) hostToAttrs;
@@ -136,7 +136,7 @@
           };
           modules = [
             ./home-manager/hosts/${user}.nix
-            catppuccin.homeModules.catppuccin
+            # catppuccin.homeModules.catppuccin
           ];
         }
       ) userToAttrs;

@@ -16,6 +16,12 @@
     nh # nix cli helper
     neofetch # system info script
     unar # unrar .rar file
+
+    # wsl packages
+    ninja
+    meson
+    pkg-config
+    gcc
   ];
 
   programs.bat.enable = true; # alternative of cat

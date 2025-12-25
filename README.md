@@ -1,6 +1,6 @@
 # My own NixOS config
 
-# NOTE:
+## NOTE:
 
 1. Command to prevent Github limit
 
@@ -16,4 +16,12 @@ $env.GITHUB_TOKEN = "ghp_my_own_token_here"
 
 ```~/.config/nix/nix.conf
 access-tokens = github.com=ghp_my_own_token
+```
+
+## Troubleshoot
+
+1. `Bashrc` and `.envrc` error with WSL:
+
+```nu
+sed -i 's/\r$//' bashrc
 ```

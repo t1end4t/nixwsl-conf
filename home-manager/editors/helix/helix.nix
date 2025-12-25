@@ -19,5 +19,5 @@ in
   ];
 
   # italics for comments sections
-  catppuccin.helix.useItalics = true;
+  # catppuccin.helix.useItalics = true;
 }
